@@ -57,7 +57,7 @@ Getting started - Server part
 
 #### Clone & install
 
-- Clone this repo by running `git clone --recursive https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack.git my_project_folder`
+- Clone this repo by running `git clone --recursive https://github.com/Corjen/wordpress-boilerplate my_project_folder`
 
 - In `.Vagrantfile` and `provision.sh`, change every occurence of `example.dev` to your local development URL`
 
