@@ -1,0 +1,51 @@
+.styleguide-navigation {
+  position: fixed;
+  width: 200px;
+  background: white;
+  border: 1px solid #eee;
+  height: 100%;
+  left: -200px;
+  transition: transform .3s;
+  padding: 3rem 1rem;
+  z-index: 9999999;
+}
+
+.styleguide-navigation--is-open {
+  /*transform: left;*/
+  left: 0;
+}
+
+.styleguide-navigation--is-open .styleguide-navigation-button {
+  transform: rotate(180deg);
+}
+
+.styleguide-navigation ul {
+  margin: .5rem 0;
+  list-style-type: none;
+}
+
+.styleguide-navigation li {
+  margin: .5rem 0;
+  list-style-type: none;
+}
+
+.styleguide-navigation a {
+  text-decoration: none;
+  color: #000;
+  font-family: Helvetica;
+}
+
+.styleguide-navigation-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #eee;
+  right: -2.5rem;
+  top: 2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #999;
+}
