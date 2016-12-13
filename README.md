@@ -31,12 +31,15 @@ This is a starter pack for developing WordPress projects. The project structure 
 - A simple patternlab plugin
 - Some frequently used plugins like Yoast SEO
 
-Getting started - Server part
----------------
+
 
 We use a vagrant box with nginx and php7. It includes a custom provision script called `provision.sh`.
 
-> **NOTE** You only have to do the following **two steps** the very first time you use this boilerplate.
+Getting started - Download & import box
+---------------
+
+> **NOTE** You only have to do the following steps the very first time you use this boilerplate.
+
 #### Download the base box
 
 Download the .box file from [https://corjen.stackstorage.com/index.php/s/19qLztoSvs4cIJA](https://corjen.stackstorage.com/index.php/s/19qLztoSvs4cIJA) and put it in the repo folder
@@ -49,7 +52,8 @@ Import the box by running:
 
 This will save the box to ```~/.vagrant.d/boxes/ubuntu-16.04-php7-mysql-v1.0```
 
-> **NOTE** You need to follow the steps below every time.
+Getting started - Server part
+---------------
 
 #### Clone & install
 
