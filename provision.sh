@@ -33,7 +33,7 @@ server {
 
     location ~* \.(png|jpg|gif) {
         try_files $uri $uri/ @noimage;
-      }
+    }
 
     location @noimage {
         rewrite ^ http://mylivesite.com/$uri;
