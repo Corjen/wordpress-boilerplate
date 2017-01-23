@@ -49,7 +49,7 @@ Download the .box file from [https://corjen.stackstorage.com/s/r8TPQA3HamKniZe](
 
 Import the box by navigating to the downloaded box in your terminal and run:
 
-```vagrant box add ubuntu-16.04-php7-mysql-v1.1 ubuntu16-php7-mysql-v1.1.box```
+```vagrant box add ubuntu16.04-php7-mysql-v1.1 ubuntu16.04-php7-mysql-v1.1.box```
 
 This will save the box to ```~/.vagrant.d/boxes/ubuntu-16.04-php7-mysql-v1.1```. You can now delete the downloaded version of the box.
 
