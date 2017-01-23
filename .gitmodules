@@ -1,3 +1,6 @@
 [submodule "public/wordpress"]
 	path = public/wordpress
 	url = https://github.com/WordPress/WordPress.git
+[submodule "public/wp-content/plugins/wordpress-pageblocks"]
+	path = public/wp-content/plugins/wordpress-pageblocks
+	url = https://github.com/Corjen/wordpress-pageblocks.git

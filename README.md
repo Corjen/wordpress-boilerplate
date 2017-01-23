@@ -28,6 +28,7 @@ This is a starter pack for developing WordPress projects. The project structure 
 **Plugins:**
 - [Timber](http://upstatement.com/timber/)
 - [Cuisine](http://docs.get-cuisine.cooking/core/)
+- [Pageblocks](https://github.com/Corjen/wordpress-pageblocks.git)
 - A simple patternlab plugin
 - Some frequently used plugins like Yoast SEO
 
@@ -42,15 +43,15 @@ Getting started - Download & import box
 
 #### Download the base box
 
-Download the .box file from [https://corjen.stackstorage.com/index.php/s/19qLztoSvs4cIJA](https://corjen.stackstorage.com/index.php/s/19qLztoSvs4cIJA) and put it in the repo folder
+Download the .box file from [https://corjen.stackstorage.com/s/r8TPQA3HamKniZe](https://corjen.stackstorage.com/s/r8TPQA3HamKniZe) and download it to a temporary location.
 
 #### Import the box
 
-Import the box by running:
+Import the box by navigating to the downloaded box in your terminal and run:
 
-```vagrant box add ubuntu-16.04-php7-mysql-v1.0 ubuntu16-php7-mysql.box```
+```vagrant box add ubuntu-16.04-php7-mysql-v1.1 ubuntu16-php7-mysql-v1.1.box```
 
-This will save the box to ```~/.vagrant.d/boxes/ubuntu-16.04-php7-mysql-v1.0```
+This will save the box to ```~/.vagrant.d/boxes/ubuntu-16.04-php7-mysql-v1.1```. You can now delete the downloaded version of the box.
 
 Getting started - Server part
 ---------------
