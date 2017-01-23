@@ -2,8 +2,7 @@
 /**
  * Settings
  *
- * @package WordPress
- * @subpackage Example
+ * @package Example
  * @version 1.0.0
  */
 
@@ -27,19 +26,9 @@ class Settings {
   public function enqueueAssets() {
     /* If we're in the development enviroment, load the unhashed css and webpack bundle */
     if ( WP_ENV === 'dev' ) {
-      wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css' );
-      wp_enqueue_script( 'main', $this->webpackLocal . '/bundle.js' );
+      wp_enqueue_script( 'main', $this->webpackLocal . '/bundle.js', array(), '', true );
     } else {
-
-      /* Read css json file & load it*/
-      $cssAssetsLocation = get_stylesheet_directory() . '/css/css-assets.json';
-      if ( ! file_exists( $cssAssetsLocation ) ) {
-        echo "Can't find css-assets.json";
-      } else {
-        $cssAssets = json_decode( file_get_contents( $cssAssetsLocation ), true );
-        wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/' . $cssAssets['main.scss'] );
-      }
-
+      
       /* Read webpack assets file & load them in the footer */
       $webpackAssetsLocation = get_stylesheet_directory() . '/js/webpack-assets.json';
       if ( ! file_exists( $webpackAssetsLocation ) ) {

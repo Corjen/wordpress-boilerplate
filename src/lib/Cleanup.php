@@ -2,8 +2,7 @@
 /**
  * Cleanup WP
  *
- * @package WordPresss
- * @subpackage Example
+ * @package Example
  * @since 1.0.0
  */
 

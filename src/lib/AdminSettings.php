@@ -2,8 +2,7 @@
 /**
  * AdminSettings
  *
- * @package WordPress
- * @subpackage Example
+ * @package Example
  * @version 1.0.0
  */
 
