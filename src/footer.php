@@ -1,11 +1,10 @@
 <?php
 /**
- * Index template
+ * Footer
  *
  * @package Example
  * @since 1.0.0
  */
-
-get_header();
-get_footer();
-?>
+wp_footer() ?>
+</body>
+</html>
