@@ -5,12 +5,15 @@
  * @package Example
  * @since 1.0.0
  */
+$fontsLoadedClass = ( isset( $_COOKIE['fonts-loaded'] ) ? 'fonts-loaded' : '' );
 ?>
 <!DOCTYPE html>
-<html>
+<html class="<?php echo $fontsLoadedClass ?>">
   <head>
     <meta charset="utf-8">
-    <title><?php wp_title() ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title><?php echo wp_title(); ?></title>
     <?php wp_head() ?>
   </head>
-  <body>
+  <body <?php body_class();?>>
