@@ -5,36 +5,30 @@ const config = require('./gulpconfig')
 const host = devIp[0] || 'localhost'
 
 module.exports = {
-  entry: {
-    app: [
-      path.resolve(__dirname, 'src/js/main.js'),
-      'webpack/hot/dev-server',
-      'webpack-dev-server/client?http://' + host + ':8080/'
-    ]
-  },
+  entry: './src/js/main.js',
+  // entry: [
+  //   'webpack/hot/dev-server',
+  //   'webpack-dev-server/client?http://' + host + ':8080/',
+  //   'src/js/main.js'
+  // ],
   output: {
-    app: {
-      path: path.resolve(__dirname, config.webpackPublicPath),
-      filename: 'bundle.js',
-      publicPath: path.resolve(__dirname, config.webpackPublicPath)
-    }
+    path: path.resolve(__dirname, config.webpackPublicPath),
+    filename: 'bundle.js',
+    publicPath: path.resolve(__dirname, config.webpackPublicPath)
   },
   devtool: 'source-map',
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015']
-        }
+        test: /\.js?$/,
+        use: ['babel-loader'],
+        exclude: /node_modules/
       }
     ]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ],
   devServer: {
     port: 8080,

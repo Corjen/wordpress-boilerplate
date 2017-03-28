@@ -5,60 +5,60 @@
 */
 
 // scss-lint:disable NestingDepth, SelectorFormat
-.c-input {
-  position: relative;
-  width: 100%;
-  margin-bottom: .5rem;
-
-  /**
-  * Status icon container
-  */
-  &__status {
-    @include transition;
-    position: absolute;
-    z-index: 2;
-    top: 15%;
-    right: .75rem;
-
-    display: flex;
-
-    height: 70%;
-
-    align-items: center;
-  }
-
-  /**
-  * Status icon
-  */
-  &__status-icon {
-    fill: $light-grey;
-    &--error {
-      display: none;
-
-      fill: $primary-color;
-    }
-  }
-
-  &__input {
-    &:focus {
-      ~ .c-input__status {
-        background: $white;
-      }
-    }
-    &.hf-invalid {
-      ~ .c-input__status {
-        .c-input__status-icon--success {
-          display: none;
-        }
-        .c-input__status-icon--error {
-          display: block;
-        }
-      }
-    }
-    &.hf-valid {
-      ~ .c-input__status .c-icon {
-        fill: $secondary-color;
-      }
-    }
-  }
-}
+// .c-input {
+//   position: relative;
+//   width: 100%;
+//   margin-bottom: .5rem;
+//
+//   /**
+//   * Status icon container
+//   */
+//   &__status {
+//     @include transition;
+//     position: absolute;
+//     z-index: 2;
+//     top: 15%;
+//     right: .75rem;
+//
+//     display: flex;
+//
+//     height: 70%;
+//
+//     align-items: center;
+//   }
+//
+//   /**
+//   * Status icon
+//   */
+//   &__status-icon {
+//     fill: $light-grey;
+//     &--error {
+//       display: none;
+//
+//       fill: $primary-color;
+//     }
+//   }
+//
+//   &__input {
+//     &:focus {
+//       ~ .c-input__status {
+//         background: $white;
+//       }
+//     }
+//     &.hf-invalid {
+//       ~ .c-input__status {
+//         .c-input__status-icon--success {
+//           display: none;
+//         }
+//         .c-input__status-icon--error {
+//           display: block;
+//         }
+//       }
+//     }
+//     &.hf-valid {
+//       ~ .c-input__status .c-icon {
+//         fill: $secondary-color;
+//       }
+//     }
+//   }
+// }

@@ -39,7 +39,7 @@ gulp.task('scss-build-production', () => {
     }))
     .pipe(plugins.sass())
     .pipe(plugins.autoprefixer('last 3 version'))
-    .pipe(plugins.uglifycss())
+    .pipe(plugins.cleanCss())
     .pipe(gulp.dest(config.dist + '/css'))
     .pipe(plugins.hash.manifest('css-assets.json', false))
     .pipe(gulp.dest(config.dist + '/css'))

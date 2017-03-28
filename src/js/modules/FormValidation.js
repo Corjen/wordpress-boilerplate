@@ -3,7 +3,7 @@
  *
  * @since 1.0.0
  */
-import 'script!hyperform/dist/hyperform.js'
+import 'script-loader!hyperform/dist/hyperform.js'
 
 const FormValidation = () => {
   window.hyperform(window)

@@ -88,7 +88,7 @@ If you want to do database management with something like Sequel Pro you can use
 Getting started - Theme part
 ---------------
 
-- Run ```npm install``` inside the root folder
+- Run ```yarn install``` inside the root folder
 - In `gulpconfig.js` change every occurence of *example* to your project name/url
 - In `package.json` change the *name*, *description*, *repo* and *license* if needed
 - In `composer.json` change the name
