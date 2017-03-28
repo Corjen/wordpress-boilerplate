@@ -4,8 +4,8 @@
  * @since 1.0.0
  */
 
-import ExampleModule from './modules/ExampleModule'
+import FormValidation from './modules/FormValidation'
 
 ;(function IIFE () {
-  ExampleModule()
+  FormValidation()
 })()
