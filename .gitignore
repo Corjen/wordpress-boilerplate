@@ -2,5 +2,6 @@
 .DS_STORE
 node_modules/
 .vagrant
+src/ip.json
 
 public/wp-content/themes/
