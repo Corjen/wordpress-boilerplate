@@ -23,7 +23,6 @@ This is a starter pack for developing WordPress projects. The project structure 
 - Composer with autoloader
 - Hashed production assets. No more hasseling with caching or version parameters👋
 - Lint SCSS & JS files
-- Critical CSS - This is automatically build for the homepage, though you could quite easily expand this to other pages
 
 **Plugins:**
 - [Timber](http://upstatement.com/timber/)
@@ -31,7 +30,6 @@ This is a starter pack for developing WordPress projects. The project structure 
 - [Pageblocks](https://github.com/Corjen/wordpress-pageblocks.git)
 - A simple patternlab plugin
 - Some frequently used plugins like Yoast SEO
-
 
 
 We use a vagrant box with nginx and php7. It includes a custom provision script called `provision.sh`.
