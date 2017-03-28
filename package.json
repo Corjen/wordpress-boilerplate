@@ -6,8 +6,7 @@
   "scripts": {
     "lint:js": "standard 'src/**/*.js'",
     "lint:scss": "scss-lint src/scss/",
-    "lint:php": "phpcs --ignore=src/*/vendor/* src/**/*.php",
-    "lint": "npm run lint:scss && npm run lint:js && npm run lint:php",
+    "lint": "npm run lint:scss && npm run lint:js",
     "clean:dist": "rm -rf dist && mkdir dist",
     "clean:build": "rm -rf public/wp-content/themes && mkdir public/wp-content/themes",
     "dev": "webpack-dev-server --config webpack.config.js --progress",
@@ -15,8 +14,8 @@
     "build:webpack": "NODE_ENV=production webpack -p --config webpack.production.config.js --cheap-module-source-map --progress",
     "build:gulp": "gulp build-production",
     "start": "npm run clean:build && gulp init && gulp",
-    "deploy": "npm run build && npm run commit",
-    "commit": "git add dist/* && git commit -m 'New build' && git push"
+    "commit": "git add dist/* && git commit -m 'New build' && git push",
+    "release": "standard-version && git push --follow-tags && git push && git push --tags"
   },
   "repository": {
     "type": "git",
