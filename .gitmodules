@@ -4,3 +4,6 @@
 [submodule "public/wordpress"]
 	path = public/wordpress
 	url = https://github.com/WordPress/WordPress.git
+[submodule "public/wp-content/plugins/pageblocks-yoast-seo"]
+	path = public/wp-content/plugins/pageblocks-yoast-seo
+	url = https://github.com/Corjen/pageblocks-yoast-seo.git
