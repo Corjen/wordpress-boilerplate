@@ -21,6 +21,7 @@ server {
 
     server_name example.dev;
     sendfile off;
+    client_max_body_size 12M;
 
     location / {
         try_files $uri $uri/ /index.php?q=$uri&$args;
