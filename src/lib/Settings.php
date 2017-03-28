@@ -27,8 +27,11 @@ class Settings {
     /* If we're in the development enviroment, load the unhashed css and webpack bundle */
     if ( WP_ENV === 'dev' ) {
       wp_enqueue_script( 'main', $this->webpackLocal . '/bundle.js', array(), '', true );
+      wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css', array(), '', 'screen' );
     } else {
-      
+      /* Read css assets and load file */
+      $assets = (array) json_decode( file_get_contents( get_stylesheet_directory() . '/css/css-assets.json' ) );
+      wp_enqueue_style( 'main', $assets['main.scss'] );
       /* Read webpack assets file & load them in the footer */
       $webpackAssetsLocation = get_stylesheet_directory() . '/js/webpack-assets.json';
       if ( ! file_exists( $webpackAssetsLocation ) ) {

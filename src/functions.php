@@ -23,7 +23,6 @@ if ( ! in_array( 'cuisine/cuisine.php', $activePlugins ) ) {
  */
 new Cleanup();
 new Settings();
-new CriticalCSS();
 new LazyLoadFonts();
 
 if ( is_admin() ) {

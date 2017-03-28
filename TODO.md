@@ -2,3 +2,5 @@
 - Add pageblocks SEO plugin
 - Add more scss
 - Add auto IP adress for webpack
+- Change max upload size in box
+- Nginx request entity to large
