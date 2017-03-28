@@ -1,0 +1,72 @@
+/**
+ * Container object
+ *
+ * @since 1.0.0
+ */
+
+.o-container {
+  width: 97.5%;
+  margin: 0 auto;
+  position: relative;
+  @include breakpoint(medium) {
+    width: 97.5%;
+  }
+  @include breakpoint(xlarge) {
+    width: 90%;
+    max-width: em-calc(1100);
+  }
+
+  @include breakpoint(xxlarge) {
+    width: 100%;
+    max-width: em-calc(1200);
+  }
+
+  &--full-width-on-mobile {
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+  }
+
+  /**
+   * Padding large
+   */
+  &--pad-l {
+    @include padding-top(2rem, .5rem);
+    @include padding-bottom(2rem, .5rem);
+  }
+  &--pad-top-l {
+    @include padding-top(2rem, .5rem);
+  }
+  &--pad-bot-l {
+    @include padding-bottom(2rem, .5rem);
+  }
+
+  /**
+   * Padding medium
+   */
+  &--pad-m {
+    @include padding-top(1rem, .25rem);
+    @include padding-bottom(1rem, .25rem);
+  }
+  &--pad-top-m {
+    @include padding-top(1rem, .25rem);
+  }
+  &--pad-bot-m {
+    @include padding-bottom(1rem, .25rem);
+  }
+
+  /**
+   * Padding small
+   */
+  &--pad-s {
+    @include padding-top(.5rem, .25rem);
+    @include padding-bottom(.5rem, .25rem);
+  }
+  &--pad-top-s {
+    @include padding-top(.5rem, .25rem);
+  }
+  &--pad-bot-s {
+    @include padding-bottom(.5rem, .25rem);
+  }
+
+}

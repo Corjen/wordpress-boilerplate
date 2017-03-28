@@ -1,7 +1,7 @@
 /**
  * Settings
  */
-@import 'settings/variables/*';
+@import 'settings/*';
 
 /**
  * Tools
@@ -28,6 +28,7 @@
  * Components
  */
 @import 'components/*';
+@import 'components/form/*';
 
 /**
  * Trumps

@@ -1,0 +1,42 @@
+/**
+ * Icon component
+ *
+ * @since 1.0.0
+ */
+
+.c-icon {
+  // @include transition(all, .2s);
+  vertical-align: middle;
+  fill: inherit;
+  stroke: inherit;
+  margin-top: -1px;
+  &--xsmall {
+    @include square(.75rem);
+  }
+  &--small {
+    @include square(1rem);
+  }
+
+  &--medium {
+    @include square(1.25rem);
+  }
+  &--large {
+    @include square(1.5rem);
+  }
+  &--xlarge {
+    @include square(1.75rem);
+  }
+
+  &--spinner {
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

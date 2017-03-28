@@ -1,0 +1,180 @@
+/**
+ * Typography
+ *
+ * @since 1.0.0
+ */
+
+
+/**
+ * HTML base
+ */
+html {
+  font-family: $pre-font-load-font-family;
+  font-size: 16px;
+
+  color: $primary-font-color;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  &.fonts-loaded {
+    font-family: $primary-font-family;
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+      font-family: $heading-font-family;
+    }
+  }
+}
+
+/**
+ * h1 & h2
+ */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-family: inherit;
+  font-weight: bold;
+  color: $primary-color;
+}
+h1,
+.h1 {
+  font-size: rem-calc(32);
+  @include breakpoint (medium) {
+    font-size: rem-calc(40);
+  }
+  @include breakpoint (xlarge) {
+    font-size: rem-calc(45);
+  }
+}
+
+h2,
+.h2 {
+  font-size: rem-calc(25);
+  @include breakpoint (medium) {
+    font-size: rem-calc(30);
+  }
+  @include breakpoint (xlarge) {
+    font-size: rem-calc(35);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom: .5rem;
+  @include breakpoint(medium) {
+    line-height: 1.4;
+  }
+}
+
+/**
+ * h3
+ */
+h3,
+.h3 {
+  font-size: rem-calc(17);
+  @include breakpoint (medium) {
+    font-size: rem-calc(18);
+  }
+  @include breakpoint(large) {
+    font-size: rem-calc(19);
+  }
+}
+
+h3 {
+  line-height: 1.5;
+}
+
+h4,
+.h4 {
+  @include font-size(15, 5);
+  @include breakpoint (medium) {
+    @include font-size(16, 5);
+  }
+}
+
+h4 {
+  margin-bottom: .25rem;
+  @include breakpoint(large) {
+    margin-bottom: .5rem;
+  }
+}
+
+/**
+ * Anchor
+ */
+a {
+  @include transition(color, .2s);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/**
+ * Bold & strong
+ */
+b,
+strong {
+  font-weight: 800;
+  line-height: inherit;
+}
+
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+/**
+ * Paragraph
+ */
+p,
+.p {
+  line-height: 1.5;
+  margin-bottom: .5rem;
+  @include breakpoint(small only) {
+    font-size: rem-calc(15);
+  }
+}
+
+p {
+  /**
+   * Link inside a paragraph
+   */
+  a {
+    @include transition(color);
+
+    text-decoration: none;
+
+    color: $primary-color;
+    fill: $primary-color;
+    &:hover {
+      color: darken($primary-color, 20%);
+      fill: darken($primary-color, 20%);
+    }
+
+    .c-icon {
+      fill: inherit;
+    }
+  }
+}

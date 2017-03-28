@@ -1,0 +1,98 @@
+/**
+ * Button
+ *
+ * @since 1.0.0
+ */
+
+@mixin button($color) {
+  background-color: $color;
+  border-bottom-color: darken($color, 20%);
+  text-shadow: 0 1px darken($color, 5%);
+  outline: 0;
+  vertical-align: baseline;
+  &:hover,
+  &:active {
+    background-color: darken($color, 10%);
+  }
+  &:active,
+  &:disabled {
+    border-bottom: 1px solid;
+    transform: translate(0, 2px);
+  }
+  &:disabled {
+    background-color: darken($color, 10%);
+  }
+}
+
+.c-button {
+  @include transition(all, .1s);
+  font-size: rem-calc(14);
+  color: $white;
+  border: 0;
+  cursor: pointer;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $primary-font-family;
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  border-bottom-width: .25rem;
+  border-bottom-style: solid;
+  border-radius: .25rem;
+  letter-spacing: 1px;
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+    padding: .75rem 2rem;
+  }
+  &--primary {
+    @include button($primary-color);
+  }
+
+  &--secondary {
+    @include button($secondary-color);
+  }
+
+  &--loading-button {
+    height: 3rem;
+    width: 12rem;
+    text-align: center;
+    padding: .9rem 0;
+    fill: $white;
+  }
+
+  &__icon {
+    display: none;
+    &--loader {
+      @include transition(transform);
+      transform-origin: 50% 50%;
+      animation: spin 1s infinite linear;
+    }
+  }
+
+  &--is-loading {
+    #{b()}__content {
+      display: none;
+    }
+    #{b()}__icon--loader {
+      display: inline-block;
+    }
+  }
+
+  &--is-finished {
+    #{b()}__content {
+      display: none;
+    }
+    #{b()}__icon--finished {
+      display: inline-block;
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

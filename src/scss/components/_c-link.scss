@@ -1,0 +1,13 @@
+/**
+ * Link
+ *
+ * @since 1.0.0
+ */
+
+.c-link {
+  &--white {
+    color: $white;
+    font-weight: bold;
+    fill: $white;
+  }
+}
