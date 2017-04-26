@@ -4,7 +4,7 @@ const AssetsPlugin = require('assets-webpack-plugin')
 
 module.exports = {
   entry: {
-    'app': './src/js/main.js',
+    'main': './src/js/main.js',
     'vendors': ['raven-js']
   },
   output: {
