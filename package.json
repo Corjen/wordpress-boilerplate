@@ -15,7 +15,8 @@
     "build:gulp": "gulp build-production",
     "start": "npm run clean:build && gulp init && gulp",
     "commit": "git add dist/* && git commit -m 'New build' && git push",
-    "release": "standard-version && git push --follow-tags && git push && git push --tags"
+    "release": "standard-version && git push --follow-tags && git push && git push --tags",
+    "deploy": "npm run build && npm run commit && git push"
   },
   "repository": "git+https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack.git",
   "author": "Corjen Moll",
@@ -53,6 +54,7 @@
     "require-dir": "^0.3.0",
     "script-loader": "^0.7.0",
     "standard": "^9.0.2",
+    "standard-version": "^4.0.0",
     "svgstore": "^2.0.2",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
