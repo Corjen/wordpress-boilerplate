@@ -98,6 +98,7 @@ gulp.task('theme-build', [
   'theme-php-build',
   'style-css-build',
   'theme-json-build',
+  'theme-twig-build',
   'theme-assets-build',
   'theme-composer-build',
   'theme-fonts-build'
@@ -107,6 +108,7 @@ gulp.task('theme-build-production', [
   'theme-php-build-production',
   'style-css-build-production',
   'theme-json-build-production',
+  'theme-twig-build-production',
   'theme-assets-build-production',
   'theme-composer-build-production',
   'theme-fonts-build-production'
