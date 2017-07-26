@@ -5,3 +5,4 @@ node_modules/
 src/ip.json
 
 public/wp-content/themes/
+public/wp-content/uploads/

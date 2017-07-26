@@ -1,2 +1,3 @@
 - Add more scss
-- Change max upload size in box
+- Fix fontfaceobserver
+- Theme name in style.css
