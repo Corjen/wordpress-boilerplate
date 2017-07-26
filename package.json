@@ -1,6 +1,6 @@
 {
   "name": "wordpress-gulp-webpack-composer-starter-pack",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Starter pack for wordpress theme development. Includes gulp (with production build), webpack, composer, critical css, unit testing, linting, etc..",
   "main": "gulpconfig.js",
   "scripts": {
