@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/compare/v1.1.2...v1.2.0) (2017-10-19)
+
+
+### Bug Fixes
+
+* Remove /dist/ ([eae334c](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/commit/eae334c))
+* Small fixes & update README ([7ce19fd](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/commit/7ce19fd))
+* Update build scripts ([4a41944](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/commit/4a41944))
+* Update config, WP & plugins ([c116a58](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/commit/c116a58))
+
+
+### Features
+
+* Add prettier & eslint ([cc12bc9](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/commit/cc12bc9))
+* Drop vagrant in favor of docker ([5d53ae2](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/commit/5d53ae2))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/Corjen/wordpress-gulp-webpack-composer-starter-pack/compare/v1.1.1...v1.1.2) (2017-07-26)
 
