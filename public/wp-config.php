@@ -32,7 +32,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 
 /* Set enviromental vars */
-if ( $http_host === 'example.dev' ) {
+if ( $http_host === 'localhost:7200' ) {
   define('WP_ENV', 'dev');
 } elseif ( $http_host === 'staging.example.com' ) {
   define('WP_ENV', 'stage');

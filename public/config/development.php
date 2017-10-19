@@ -7,17 +7,17 @@
  * @since 1.0.0
  */
 
-$http_host = 'http://example.dev';
+$http_host = 'http://localhost:7200';
 
 define('WP_SITEURL', $http_host . '/wordpress');
 define('WP_HOME',    $http_host );
 define('WP_CONTENT_URL', $http_host . '/wp-content');
 
 // ** MySQL settings ** //
-define('DB_NAME', 'example_develop');
-define('DB_USER', 'dev');
-define('DB_PASSWORD', 'dev');
-define('DB_HOST', 'localhost');
+define('DB_NAME', 'docker');
+define('DB_USER', 'docker');
+define('DB_PASSWORD', 'docker');
+define('DB_HOST', 'mysql');
 
 /* Debug */
 define('WP_DEBUG', true);
