@@ -1,3 +1,0 @@
-- Add more scss
-- Fix fontfaceobserver
-- Theme name in style.css

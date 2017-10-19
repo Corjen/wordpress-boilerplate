@@ -3,6 +3,8 @@
 node_modules/
 .vagrant
 src/ip.json
+src/vendor
+/dist/
 
 public/wp-content/themes/
 public/wp-content/uploads/

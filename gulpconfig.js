@@ -5,7 +5,7 @@
 var config = {
   'build': 'public/wp-content/themes/example',
   'webpackPublicPath': 'public/wp-content/themes/example/js',
-  'proxy': 'http://example.dev/',
+  'proxy': 'http://localhost:7200/',
   'dist': 'dist',
   src: {
     php: 'src/**/*.php',
