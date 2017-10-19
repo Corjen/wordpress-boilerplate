@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "prettier"],
+  "plugins": ["import"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}
