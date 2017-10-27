@@ -44,7 +44,7 @@ Getting started
 Your server (including mysql) will run on localhost:7200. You can connect to the database with something like Sequel Prop using the following settings:
 
 
-- MySQL Host *127.0.0.1:7200*
+- MySQL Host *127.0.0.1*
 - Host: *mysql*
 - Username *docker*
 - Password *docker*
